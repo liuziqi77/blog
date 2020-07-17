@@ -3,22 +3,23 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hojun
+title: 魚閣
 subtitle:
-description: 好少年光芒万丈
-keywords:
-author: hojun
-language: zh-cn
-timezone:
+description: 
+keywords:                   #关键词，可不写(写多个时用 , 隔开)
+author: LZQ
+language: zh-CN
+timezone: 'Asia/Shanghai'   #时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: https://liuziqi77.github.io
 root: /
+# 文章链接格式
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# Directory
+# Directory 文件目录
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -28,11 +29,11 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
-new_post_name: :title.md # File name of new posts
+# Writing 文章 静态页面生成属性
+new_post_name: :title.md      # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+titlecase: false              # Transform title into titlecase
+external_link: true           # Open external links in new tab
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -93,3 +94,46 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -date
+
+# live2d:
+#   enable: true
+#   scriptFrom: local
+#   pluginRootPath: live2dw/
+#   pluginJsPath: lib/
+#   pluginModelPath: assets/
+#   tagMode: false
+#   debug: false
+#   model:
+#     use: live2d-widget-model-epsilon2_1
+#   display:
+#     position: right
+#     width: 200
+#     height: 400
+#   mobile:
+#     show: true
+#   react:
+#     opacity: 0.6
+
+# Live2D
+live2d:
+  model:
+    jsonPath: https://cdn.jsdelivr.net/gh/liuziqi77/cdn/live2d/packages/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json
+    scale: 1
+    # hHeadPos: 0.5
+    # vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 200
+    height: 400
+    position: left
+    hOffset: 0
+    vOffset: -40
+  mobile:
+    show: true
+    position: left
+    scale: 1
+  react:
+    opacityDefault: 0.6
+    opacityOnHover: 0.2
+  dialog:
+    enable: false
